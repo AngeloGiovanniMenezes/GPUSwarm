@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "ABC_CPU.py", line 242, in <module>
+    main()
+  File "ABC_CPU.py", line 240, in main
+    loop(arquivo, i)
+  File "ABC_CPU.py", line 227, in loop
+    ABC.run()
+  File "ABC_CPU.py", line 202, in run
+    self.fase_abelhas_olheiras()
+  File "ABC_CPU.py", line 93, in fase_abelhas_olheiras
+    indice_selecionado = self.seleciona(range(len(self.fontes_alimento)), probabilidades)
+  File "ABC_CPU.py", line 158, in seleciona
+    return random.choices(solucao, weights)[0]
+AttributeError: 'module' object has no attribute 'choices'
